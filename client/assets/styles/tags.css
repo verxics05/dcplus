@@ -1,0 +1,104 @@
+a, abbr, 
+b, bdi, bdo, blockquote, button, 
+cite, code, 
+data, dd, dfn, dl, dt, 
+em, 
+figcaption, figure, 
+h1, h2, h3, h4, h5, h6, 
+i, input,
+kbd, 
+label, li, 
+mark, menu, 
+ol, 
+p, pre, 
+q, rp, rt, ruby, 
+s, samp, small, span, strong, sub, 
+table, time, tr, th, td,
+u, ul, 
+var, 
+wbr {
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  letter-spacing: inherit;
+  line-height: 1.25;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+i, strong {
+  font-style: unset;
+}
+
+input, textarea, button {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: 0;
+  background-color: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul, ol {
+  list-style: none;
+  list-style-type: none;
+}
+
+.sep > * {
+  float: left;
+}
+
+.sep::after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+.content--noPadding {
+  padding: 0;
+}
+
+.inner {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 980px;
+}
+
+hr {
+  border: 0;
+  border-color: transparent;
+  width: 100%;
+  height: 1px;
+  background-color: #d1d1d1;
+}
+
+.blind {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, .8);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border-radius: 6px;
+}
+
+.blind > .inner {
+  margin-top: 80px;
+}
+
+.blind p {
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 18px;
+  text-align: center;
+}

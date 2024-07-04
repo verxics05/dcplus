@@ -1,0 +1,153 @@
+.op-tag-form input {
+  font-size: 13px;
+}
+
+.op-tag-form .op-tag-form-input-control,
+.op-tag-form .op-tag-form-input-control .op-tag-form-input-control {
+  width: 100%;
+  height: auto;
+}
+
+.op-tag-form .op-tag-form-input-control {
+  padding: 4px 0;
+  width: 436px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.op-tag-form .op-tag-form-submit {
+  width: 432px;
+}
+
+.op-tag-form .op-tag-form-input-control label {
+  display: inline-block;
+  font-size: 16px;
+  width: 120px;
+}
+
+.op-tag-form .op-tag-form-input-control input {
+  width: 300px;
+  height: 32px;
+  display: inline;
+  background-color: #fff;
+  border: 1px solid #d1d1d1;
+  border-radius: 6px;
+  margin-left: 12px;
+  padding: 0 8px;
+}
+
+.op-tag-form .op-tag-form-input-control input:focus {
+  border-color: var(--color-brand);
+}
+
+.op-tag-form .op-tag-form-submit {
+  text-align: right;
+}
+
+.op-tag-form .op-tag-form-submit button[type="submit"] {
+  padding: 8px 21px;
+  font-size: 14px;
+  background-color: var(--color-brand);
+  color: #fff;
+  border-radius: 6px;
+}
+
+.op-tag-form-hint-group {
+  display: inline;
+  position: relative;
+}
+
+.op-tag-form-hint {
+  display: inline-flex;
+  align-items: center;
+  position: absolute;
+  background-color: #eee;
+  border-radius: 0 6px 6px 0;
+}
+
+.op-tag-form-hint span {
+  font-size: 14px;
+}
+
+.op-tag-form-hint--create .op-tag-form-hint {
+  right: 1px;
+  width: calc(45px + 2 * 8px);
+  height: 30px;
+  justify-content: center;
+  margin-top: 1px;
+}
+
+.op-tag-form-hint--create input {
+  padding-right: calc(45px + 2 * 8px)!important;
+}
+
+/* special */
+
+.op-tag-form-special {
+  margin-top: 16px;
+}
+
+.op-tag-form-special .op-tag-form-special-input-control,
+.op-tag-form-special .op-tag-form-special-submit {
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.op-tag-form-special .op-tag-form-special-input-control input {
+  height: 40px;
+  padding: 0 11px;
+}
+
+.op-tag-form-special .op-tag-form-special-input-control textarea {
+  padding: 8px 11px;
+  height: 300px;
+}
+
+.op-tag-form-special .op-tag-form-special-input-control input, 
+.op-tag-form-special .op-tag-form-special-input-control textarea {
+  width: 700px;
+  border: 1px solid #c1c1c1;
+  font-size: 15px;
+}
+
+.op-tag-form-special .op-tag-form-special-submit {
+  text-align: right;
+  margin-right: 140px;
+  gap: 10px;
+}
+
+.op-tag-form-special .op-tag-form-special-submit,
+.op-tag-form-special .op-tag-form-special-submit a {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.op-tag-form-special .op-tag-form-special-submit button,
+.op-tag-form-special .op-tag-form-special-submit a {
+  width: 100px;
+  height: 40px;
+  justify-content: center!important;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.op-tag-form-special .op-tag-form-special-submit a {
+  border: 1px solid #333;
+  color: #000;
+}
+
+.op-tag-form-special .op-tag-form-special-submit button {
+  background-color: var(--color-brand);
+  color: #fff;
+}
+
+.body .content .content-item {
+  display: inline-block;
+}
+
+.body .content .content-item.op-tag-form > .inner {
+  padding: 26px 28px;
+}

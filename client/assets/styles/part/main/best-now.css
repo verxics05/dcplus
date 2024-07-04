@@ -1,0 +1,9 @@
+.body .content .content-bestNow {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.body .content .content-bestNow .inner {
+  padding-bottom: 0!important;
+}

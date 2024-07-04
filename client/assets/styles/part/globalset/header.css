@@ -1,0 +1,86 @@
+header {
+  width: 100%;
+  height: 120px;
+  background-color: #fff;
+}
+
+header h1 {
+  font-size: 39px;
+  font-family: "Rowdies", sans-serif;
+  font-weight: 400;
+  color: var(--color-brand);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+header .head-search {
+  width: var(--width-headSearch);
+  height: 46px;
+  border: 3px solid var(--color-brand);
+  border-radius: 4px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: calc(var(--width-logo) + var(--padding-fav));
+  transform: translateY(-50%);
+}
+
+header .head-search-inner {
+  width: 100%;
+  height: 100%;
+}
+
+header .head-search-group {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+}
+
+header .head-search-control {
+  height: 100%;
+}
+
+header .head-search-control.head-search-input {
+  width: calc(100% - 46px);
+}
+
+header .head-search-control.head-search-input input {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-brand-light);
+  border-radius: 3px;
+  padding: 0 calc(4px + (var(--padding-fav) / 2));
+  font-size: 16px;
+}
+
+header .head-search-control.head-search-go {
+  width: 46px;
+  background-color: var(--color-brand);
+}
+
+header .head-search-control.head-search-go button {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+header .head-search-control.head-search-go::after {
+  content: '';
+}
+
+header .head-search-control.head-search-go button iconify-icon {
+  position: absolute;
+  font-size: 1.6rem;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}

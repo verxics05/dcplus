@@ -1,0 +1,13 @@
+*.md 
+!README.md
+*.txt
+*.html
+*.log
+.logic
+
+.vscode/
+_restricted/
+listener/
+
+server/utils/database/
+server/utils/manage/cookie/

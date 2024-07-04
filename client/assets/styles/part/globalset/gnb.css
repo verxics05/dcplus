@@ -1,0 +1,89 @@
+.gnb {
+  width: 100%;
+  height: 42px;
+  background-color: var(--color-brand);
+}
+
+.gnb-inner {
+  overflow: visible;
+}
+
+.gnb ul.step1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.gnb a {
+  display: block;
+  text-decoration: none;
+  text-overflow: clip;
+  color: #fff;
+  font-weight: 300;
+}
+
+.gnb ul.step1 > li {
+  height: 100%;
+  position: relative;
+}
+
+.gnb ul.step1 > li:hover > a {
+  color: var(--color-brand-light);
+}
+
+.gnb ul.step1 > li:hover > a::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-brand-light);
+  bottom: -1px;
+  left: 0;
+}
+
+.gnb ul.step1 > li a {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+
+.gnb ul.step2 {
+  position: absolute;
+  top: 42px;
+  left: 0;
+  background-color: var(--color-brand);
+  z-index: 1;
+  padding: calc(var(--padding-fav) / 2) var(--padding-fav) var(--padding-fav);
+  border-radius: 0 0 3px 3px;
+
+  display: none;
+}
+
+.gnb ul.step2 li {
+  white-space: nowrap;
+}
+
+.gnb ul.step2 li:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+.gnb ul.step2 li > a {
+  font-size: 14px;
+}
+
+.gnb ul.step2 li > a:hover {
+  text-decoration: underline;
+}
+
+.gnb ul.step1 > li:hover ul.step2 {
+  display: block;
+}
+
+.cascade-divide {
+  margin: 12px 0 12px 0!important;
+}

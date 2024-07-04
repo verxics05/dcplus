@@ -1,0 +1,48 @@
+.content-item-onlyBG {
+  background-color: #fff;
+  border-radius: 6px;
+  margin: 16px 0 0;
+}
+
+.content-item-onlyBG .inner {
+  padding: 20px 24px;
+}
+
+.body .content .op-head {
+  margin: 16px 0 0;
+}
+
+.body .content .op-head a {
+  text-decoration: none;
+  display: inline;
+}
+
+.body .content .op-head h2,
+.body .content .op-head p {
+  font-size: 28px;
+  display: inline;
+}
+
+.body .content .op-head h2 {
+  font-size: 28px;
+  color: var(--color-brand);
+  font-weight: 600;
+}
+
+.body .content .op-head p {
+  font-size: 22px;
+  color: #000;
+  font-weight: 500;
+}
+
+.body .content .op-head .op-head-title {
+  margin-top: 8px;
+  display: inline-block;
+}
+
+.body .content .op-head .op-horiz {
+  width: 100%;
+  height: 2px;
+  margin-top: 14px;
+  background-color: var(--color-brand);
+}

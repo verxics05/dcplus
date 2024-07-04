@@ -1,0 +1,188 @@
+.op-articleList {
+  overflow: hidden;
+}
+
+.body .content .op-articleList .inner {
+  padding-bottom: 0;
+}
+
+.body .content .op-articleList-form {
+  display: inline-block;
+  margin-top: 16px;
+}
+
+.body .content .op-articleList-form div {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.body .content .op-articleList-form button,
+.body .content .op-articleList-form a {
+  padding: 8px 16px;
+  background-color: #fff;
+  color: var(--color-brand);
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.body .content .op-head-do {
+  display: flex;
+  justify-content: space-between;
+}
+
+.body .content .op-articleList-form button:hover,
+.body .content .op-articleList-form button.highlight,
+.body .content .op-articleList-form a {
+  background-color: var(--color-brand);
+  color: #fff;
+}
+
+.body .content .op-articleList-form a {
+  display: block;
+}
+
+.body .content .op-articleList table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.body .content .op-articleList table thead {
+  display: table-header-group;
+}
+
+.body .content .op-articleList tr {
+  font-size: 14px;
+  position: relative;
+}
+
+.table-border {
+  width: calc(100% + 2 * 12px);
+  height: 1px;
+  background-color: #d1d1d1;
+  position: absolute;
+  bottom: 0;
+  left: -12px;
+  z-index: 1;
+}
+
+.table-background {
+  width: calc(100% + 2 * 12px);
+  height: 100%;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: -12px;
+  z-index: 1;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.body .content .op-articleList th {
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+
+.body .content .op-articleList td:not(:nth-child(2), :nth-child(3)) {
+  padding: 9px 0;
+  position: static;
+  z-index: 2;
+}
+
+.body .content .op-articleList a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.body .content .op-articleList tbody tr:last-child .table-border {
+  display: none;
+}
+
+.body .content .op-articleList tbody tr:hover {
+  background-color: #f1f2f7;
+}
+
+.body .content .op-articleList tbody tr:hover a::before,
+.body .content .op-articleList tbody tr:hover a::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: #f1f2f7;
+  top: 0;
+  width: 12px;
+  height: 100%;
+}
+
+.body .content .op-articleList tbody tr:hover a::before {
+  left: -12px;
+}
+
+.body .content .op-articleList tbody tr:hover a::after {
+  right: -12px;
+}
+
+.body .content .op-articleList tbody tr td:nth-child(5) {
+  color: #dc1616;
+}
+
+.body .content .op-articleList tbody tr td a {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 9px 0;
+}
+
+.body .content .op-articleList a:hover {
+  text-decoration: underline;
+  color: var(--color-brand);
+}
+
+.body .content .op-articleView-text {
+  font-size: 15px;
+}
+
+.body .content .op-articleView-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+.body .content .op-articleView-flex .op-articleList-form {
+  margin-top: 0;
+}
+
+.op-articleList-pagination {
+  width: 100%;
+  height: auto;
+  margin-top: 16px;
+}
+
+.op-articleList-pagination-finner {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.op-articleList-pagination-finner button {
+  padding: 4px 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  color: #999;
+  font-weight: 600;
+}
+
+.op-articleList-pagination-finner button.on {
+  color: var(--color-brand);
+}
+
+.op-articleList-pagination-finner button:hover {
+  color: #ff0000;
+}
+
+.op-articleList-pagination-finner button.tomult {
+  display: inline-flex;
+  align-items: center;
+  font-size: 22px;
+}

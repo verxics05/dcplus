@@ -1,0 +1,101 @@
+@import url('./fonts.css');
+@import url('./tags.css?q=26');
+
+/* 헤더 */
+@import url('./part/globalset/header.css');
+
+/* GNB */
+@import url('./part/globalset/gnb.css?q=3');
+
+/* 최근방문 */
+@import url('./part/globalset/recent.css');
+
+/* 푸터 */
+@import url('./part/globalset/footer.css?q=3');
+
+/* op-head (공통) */
+@import url('./part/globalset/op-head.css?q=3');
+
+:root {
+  --color-brand: #0b277c;
+  --color-brand-light: #f1f1f7;
+
+  --width-logo: 199.99px;
+  --width-headSearch: 440px;
+
+  --padding-fav: 16px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: var(--color-brand-light);
+}
+
+.wrap {
+  width: 100%;
+  min-width: 980px;
+  height: auto;
+}
+
+.body {
+  width: 100%;
+  height: 100%;
+}
+
+.body .content {
+  width: 100%;
+  height: 100%;
+}
+
+.body .content .content-item {
+  background-color: #fff;
+  margin-top: 16px;
+  border-radius: 8px;
+  border: 1px solid var(--color-brand);
+}
+
+.body .content .content-item .inner {
+  padding: 14px 12px;
+}
+
+.body .content .content-item .content-item-tab b {
+  font-size: 15px;
+  font-weight: 600;
+  color: #999;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.body .content .content-item .content-item-tab b:hover,
+.body .content .content-item .content-item-tab b.highlight {
+  color: var(--color-brand);
+}
+
+.body .content .content-item.content--mt {
+  margin-top: 12px;
+}
+
+.body .content .content-main {
+  width: calc(var(--width-logo) + var(--width-headSearch) + var(--padding-fav));
+  height: 100%;
+}
+
+.body .content .content-side {
+  width: calc(100% - (var(--width-logo) + var(--width-headSearch) + (2 * var(--padding-fav))));
+  height: 100%;
+  margin-left: var(--padding-fav);
+  position: sticky;
+  top: 0;
+
+  /* background-color: #fff; */
+}

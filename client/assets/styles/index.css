@@ -1,0 +1,20 @@
+/* 실시간 베스트 */
+@import url('./part/main/best-now.css?q=1');
+
+/* 글 목록 */
+@import url('./part/globalset/article.css');
+
+/* 광고 */
+@import url('./part/globalset/ad.css?q=1');
+
+/* 뉴스 */
+@import url('./part/main/news.css');
+
+/* 개념글 */
+@import url('./part/main/pop.css?q=4');
+
+/* 로그인 */
+@import url('./part/side/signin.css?q=3');
+
+/* 실북갤, 흥갤, 신설갤 */
+@import url('./part/side/gall.css');

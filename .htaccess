@@ -1,0 +1,40 @@
+RewriteEngine On
+
+RewriteRule ^$ ./client/pages/_main/index.php [L]
+
+RewriteRule ^listener/([0-9a-zA-Z가-힣]+)$ ./listener/$1.php [L]
+
+# auth/* => client/pages/auth/* - 인증
+# blocked/* => client/pages/blocked/* - 오류
+# *, create/* => client/pages/board/* - 갤러리
+# cons/* => client/pages/cons/* - 콘
+# galleries/* => client/pages/galleries/* - 갤러리 리스트
+# gallog/* => client/pages/gallog/* - 갤로그
+# pluslab/* => client/pages/pluslab/* - 개발도구
+
+# Auth 리라이트
+RewriteRule ^auth/(.*)$ ./client/pages/auth/$1.php [L]
+
+# Blocked 리라이트
+RewriteRule ^blocked/(.*)$ ./client/pages/blocked/$1.php [L]
+
+# Board 리라이트
+RewriteRule ^(?!auth|blocked|create|cons|galleries|gallog|pluslab|tools)([0-9a-zA-Z가-힣]+)(?:/|/?page=([0-9]+))?$ ./client/pages/board/board.php?gid=$1&page=$2 [L,QSA]
+
+  # Write 리라이트
+  RewriteRule ^(?!auth|blocked|create|cons|galleries|gallog|pluslab|tools)([0-9a-zA-Z가-힣]+)/write(?:/|/?return=([0-9a-zA-Z가-힣]+))?$ ./client/pages/board/write.php?gid=$1&redirect=$2 [L,QSA]
+
+  # Read 리라이트
+  RewriteRule ^(?!auth|blocked|create|cons|galleries|gallog|pluslab|tools)([0-9a-zA-Z가-힣]+)/([0-9]+)(?:/|/?page=([0-9a-zA-Z가-힣]+))?$ ./client/pages/board/read.php?gid=$1&aid=$2&page=$3 [L,QSA]
+
+  # Create 리라이트
+  RewriteRule ^create$ ./client/pages/board/create.php [L]
+
+# Pluslab 리라이트
+RewriteRule ^pluslab/(.*)(?:/|/?gid=([0-9a-zA-Z가-힣]+))?$ ./client/pages/pluslab/$1.php?gid=$2 [L,QSA]
+
+# 에러페이지
+ErrorDocument 404 http://localhost:50001/verxics/dcplus/blocked/404
+
+# .plus -> .php
+RewriteRule ^(.*).plus$ ./$1.php
